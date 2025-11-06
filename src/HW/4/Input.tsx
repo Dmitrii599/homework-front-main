@@ -5,17 +5,18 @@ type InputPropsType = {
 	setCurrentText: (text: string) => void // НУЖНО ПРОТИПИЗИРОВАТЬ
 };
 
-export const Input = ({currentText, setCurrentText}: InputPropsType) => {
+export const Input = (props: InputPropsType) => {
 	const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
 		// НУЖНО ДОПИСАТЬ
-		setCurrentText(event.target.value)
+	props.setCurrentText(event.target.value)
 	};
 
 	return (
 	  <input
 			id={'hw04-input'}
 			type="text"
-			value={currentText}
-			onChange={onChangeHandler} />
+			value={props.currentText}
+			onChange={onChangeHandler}
+		/>
 	);
 };

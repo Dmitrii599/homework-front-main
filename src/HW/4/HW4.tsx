@@ -39,7 +39,7 @@ export const HW4 = () => {
 
       <Button
         callBack={handleSave}
-        name={'hw04'}
+        name={'Сохранить'}
       />
 
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
@@ -50,7 +50,8 @@ export const HW4 = () => {
             <li
               key={index}
               id={`hw04-task-${index}`}
-              className={index % 2 === 0 ? s.chetNechet : ''}>
+              className={index % 2 ===0 ? s.chetNechet : ''}
+            >
               {el}
             </li>
           );

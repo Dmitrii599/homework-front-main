@@ -3,18 +3,15 @@ type ButtonPropsType = {
   name: string // НУЖНО ПРОТИПИЗИРОВАТЬ
 };
 
-export const Button = ({callBack, name}: ButtonPropsType) => {
+export const Button = (props: ButtonPropsType) => {
   const callBackHandler = () => {
     // НУЖНО ДОПИСАТЬ
-    callBack();
+    props.callBack();
   };
 
   return (
-    <button
-      id={'hw04-button'}
-      onClick={callBackHandler}
-    >
-      {name}
+    <button id={'hw04-button'} onClick={callBackHandler}>
+      {props.name}
     </button>
   );
 };
