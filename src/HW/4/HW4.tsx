@@ -39,7 +39,7 @@ export const HW4 = () => {
 
       <Button
         callBack={handleSave}
-        name={'Сохранить'}
+        name={'hw04'}
       />
 
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
